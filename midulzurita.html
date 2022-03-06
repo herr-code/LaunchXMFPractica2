@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulzuritas | Mi dulzurita</title>
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
+    
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css"> -->
+</head>
+<body>
+    <!-- Menú de navegación, logo de la empresa, redes sociales.... -->
+    <header class="header">
+        <!-- <div><img src="assets/img/Dulzurita-logos.jpeg" alt="" class="logo"></div> -->
+        <img src="assets/img/Dulzurita-logos100.jpeg" alt="Logo de Dulzurita pastelería" class="logo" title="Logo Dulzurita Pastelería"> 
+        <nav class="main-nav">
+            <ul id="main-menu" class="main-menu">
+                <li class="main-menu__item">
+                    <a href="./index.html"  class="main-menu__link">Inicio</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Productos</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="./index.html#ubicacion" class="main-menu__link">Ubicación</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="./historia.html" class="main-menu__link">Historia</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="./index.html#personaliza" class="main-menu__link">Crea tu dulzurita</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main id="main" class="main">
+        <div class="slide">
+            <img src="assets/img/cake3.jpg" alt="Rebanada de pastel y café">
+        </div>
+
+        <section class="historia">
+            <h2>Mi dulzurita será...</h2>
+            <hr>
+            
+            <form id="form" class="form">
+                <div class="fieldset">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="fieldset">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="tel" name="tel" placeholder="123456789">
+                </div>
+                <div class="fieldset">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="dulzurita@gmail.com">
+                </div>
+                <div class="fieldset">
+                    <label for="descripcion">Descripción general</label>
+                    <textarea id="story" name="story" rows="5" cols="33">Mi dulzurita...</textarea>
+                </div>
+                <div class="fieldset">
+                    <label for="">Tamaño</label>
+                    <input type="radio" id="chico" name="tamanio">Chico
+                    <input type="radio" name="tamanio">Mediano
+                    <input type="radio" name="tamanio">Grande
+                </div>
+                <div class="fieldset">
+                    <label for="">¿Qué sabor?</label>
+                    <input type="checkbox" name="chocolate">Chocolate
+                    <input type="checkbox" name="fresa">Fresa
+                    <input type="checkbox" name="coco">Coco
+                    <input type="checkbox" name="Vainilla">Vainilla
+                    <input type="checkbox" name="Capuchino">Capuchino
+                    <input type="checkbox" name="Moka">Moka
+                    <input type="checkbox" name="Chocoflan">Chocoflan
+                </div>
+                <div class="fieldset">
+                    <label for="">Decorálo con...</label>
+                    <input type="checkbox" name="chispaschocolate">Chispas de chocolate
+                    <input type="checkbox" name="pudinvainilla">Pudín de vainilla
+                    <input type="checkbox" name="chocolatepolvo">Chocolate en polvo
+                    <input type="checkbox" name="nuez">Nuez pícada
+                    <input type="checkbox" name="almendras">Almendras
+                    <input type="checkbox" name="fruta">Fruta en almíbar
+                    <input type="checkbox" name="canela">Canela en polvo
+                </div>
+                <div class="fieldset">
+                    <label for="number">Cantidad</label>
+                    <input type="number" id="number" name="cantidad" value="1">
+                </div>
+
+                <div class="fieldset">
+                    <label for="">Total: </label>
+                </div>
+                <input type="reset" name="reset" value="Deshacer todo!">
+                <input type="button" name="mas" value="Quiero agregar otra dulzurita">
+                <input type="submit" name="submit" value="Está hecho!">
+            </form>
+        </section>
+        
+    </main>
+    
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Síguenos en nuestras redes sociales</p>
+        <img src="assets/icons/facebook20.png" alt="Logo de Facebook">
+        <img src="assets/icons/instagram20.png" alt="Logo de Instagram">
+        <p>Hecha con <img src="assets/icons/heart20.png" alt="Icono de corazón"> por Dulzuritas Pastelería @ Todos los derechos reservados 2022</p>
+    </footer>
+    <!-- <script src="js/scripts.js"></script>] -->
+</body>
+</html>
